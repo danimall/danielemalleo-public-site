@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniele Malleo, PhD — Scientific Systems Builder &amp; R&amp;D Executive</title>
+  <meta name="description" content="Scientific systems builder and R&amp;D executive who takes complex platforms from architecture through launch and scale." />
+  <meta name="author" content="Daniele Malleo" />
+  <meta name="theme-color" content="#5b93ff" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Daniele Malleo, PhD — Scientific Systems Builder &amp; R&amp;D Executive" />
+  <meta property="og:description" content="I build zero-to-one scientific platforms where software, automation, and AI meet the physical world." />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniele Malleo",
+    "honorificSuffix": "PhD",
+    "jobTitle": "Vice President, Product",
+    "email": "mailto:malleo@pm.me",
+    "sameAs": [
+      "https://www.linkedin.com/in/danielemalleo",
+      "https://www.dailybrief.fyi",
+      "https://www.theskyabove.net"
+    ],
+    "knowsAbout": [
+      "Systems architecture",
+      "Scientific instrumentation",
+      "Laboratory automation",
+      "AI for science",
+      "Autonomous experimentation",
+      "Microfluidics",
+      "R&D leadership"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --fs:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+      --fm:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+      --bg:#080a12; --bg2:#06080f; --panel:#101522; --panelhi:#0c1019;
+      --line:#1a2030; --lineb:#232c42; --linex:#2b3a5c;
+      --ink:#f1f5fc; --tx:#e4ebf8; --body:#c6d1e8; --muted:#98a4c1; --faint:#6a7391;
+      --acc:#5b93ff; --accs:#9dbcff; --accd:#293a5e; --acci:#05102b; --num:#31477e;
+      --glow:rgba(91,147,255,.32); --glowsoft:rgba(91,147,255,.13);
+      --radius:12px; --maxw:1040px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:var(--fs);color:var(--tx);background:var(--bg);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    a{color:var(--accs);text-decoration:none}
+    a:hover{text-decoration:underline}
+    a:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:3px}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+    .nav{position:sticky;top:0;z-index:20;background:rgba(8,10,18,.82);border-bottom:1px solid var(--line);backdrop-filter:saturate(140%) blur(9px);-webkit-backdrop-filter:saturate(140%) blur(9px)}
+    .nav-inner{max-width:var(--maxw);margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .nav-name{font-family:var(--fs);font-weight:600;color:var(--ink);letter-spacing:-.01em}
+    .nav-links{display:flex;gap:20px;align-items:center}
+    .nav-links a{color:var(--muted);font-family:var(--fm);font-size:.74rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+    .nav-links a:hover{color:var(--acc);text-decoration:none}
+
+    .hero{padding:76px 0 42px;background:radial-gradient(120% 78% at 10% -12%,var(--glow),transparent 55%)}
+    .kicker,.eyebrow{margin:0 0 16px;color:var(--acc);font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+    h1,h2,h3,p{margin-top:0}
+    h1{margin-bottom:18px;font-family:var(--fs);font-size:clamp(2.6rem,7vw,4rem);font-weight:600;letter-spacing:-.03em;line-height:1.02;color:var(--ink)}
+    .headline{max-width:28ch;margin:0 0 20px;font-family:var(--fs);font-size:clamp(1.55rem,3.7vw,2.3rem);font-weight:500;line-height:1.18;color:var(--body)}
+    .hero-intro{max-width:70ch;margin-bottom:26px;color:var(--muted);font-size:1.05rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--accd);border-radius:6px;background:transparent;color:var(--tx);font-size:.9rem;font-weight:600}
+    .button:hover{border-color:var(--acc);color:var(--accs);text-decoration:none}
+    .button.primary{border-color:var(--acc);background:var(--acc);color:var(--acci)}
+    .button.primary:hover{background:var(--accs);border-color:var(--accs);color:var(--acci)}
+    .availability{margin-bottom:24px;color:var(--muted);font-size:.9rem}
+    .availability strong{color:var(--accs);font-family:var(--fm);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.8rem}
+    .contact{display:flex;flex-wrap:wrap;gap:9px 11px;align-items:center}
+    .contact a,.contact span{display:inline-flex;align-items:center;min-height:38px;padding:7px 13px;border:1px solid var(--accd);border-radius:999px;background:transparent;color:var(--body);font-family:var(--fm);font-size:.8rem;font-weight:500}
+    .contact a:hover{border-color:var(--acc);color:var(--accs);text-decoration:none}
+    .contact .plain{border-color:var(--line);color:var(--faint)}
+
+    .metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-bottom:42px}
+    .metric{min-height:128px;padding:22px 20px;border:1px solid var(--lineb);border-radius:10px;background:var(--panel)}
+    .metric-value{display:block;margin-bottom:9px;color:var(--ink);font-family:var(--fs);font-size:1.7rem;font-weight:600;line-height:1.08;letter-spacing:-.02em;text-shadow:0 0 26px var(--glow)}
+    .metric-label{color:var(--muted);font-size:.84rem;line-height:1.45}
+
+    section{padding:52px 0;border-top:1px solid var(--line)}
+    h2{margin-bottom:24px;font-family:var(--fs);font-size:clamp(1.7rem,3.5vw,2.25rem);font-weight:600;letter-spacing:-.02em;line-height:1.12;color:var(--ink)}
+    h3{font-size:1rem;color:var(--ink)}
+    p{margin-bottom:16px}
+
+    .split{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:38px;align-items:start}
+    .positioning{margin:0;color:var(--tx);font-family:var(--fs);font-size:clamp(1.28rem,2.7vw,1.7rem);font-weight:500;line-height:1.4}
+    .aside-card{padding:24px;border:1px solid var(--lineb);border-top:2px solid var(--acc);border-radius:8px;background:var(--panel)}
+    .aside-card h3{margin-bottom:10px;font-family:var(--fs);font-weight:600;font-size:1.08rem;color:var(--ink)}
+    .aside-card p{margin:0;color:var(--muted);font-size:.93rem}
+
+    .cases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .case{display:flex;flex-direction:column;min-height:322px;padding:28px;border:1px solid var(--lineb);border-radius:10px;background:var(--panel)}
+    .case.featured{grid-column:1/-1;min-height:auto;position:relative;overflow:hidden}
+    .case.featured::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--acc),transparent 70%)}
+    .case.wide{grid-column:1/-1;min-height:auto}
+    .case-kicker{margin-bottom:10px;color:var(--acc);font-family:var(--fm);font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+    .case h3{margin-bottom:6px;font-family:var(--fs);font-weight:600;font-size:1.35rem;line-height:1.18;color:var(--ink)}
+    .case-role{margin-bottom:17px;color:var(--muted);font-family:var(--fm);font-size:.82rem}
+    .case p,.case li{color:var(--body)}
+    .case ul{list-style:none;display:grid;gap:9px;margin:0 0 18px;padding-left:0}
+    .case li{position:relative;padding-left:20px}
+    .case li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;background:var(--acc);transform:rotate(45deg)}
+    .case-link{margin-top:auto;color:var(--acc);font-size:.87rem;font-weight:600}
+    .case-links{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:18px}
+    .case-links .case-link{margin-top:0}
+    .proof-line{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .proof-line span,.chip{display:inline-block;padding:5px 11px;border:1px solid var(--accd);border-radius:999px;background:transparent;color:var(--accs);font-family:var(--fm);font-size:.72rem;font-weight:500}
+
+    .now-grid{display:grid;grid-template-columns:1fr;gap:16px}
+    .now-card{display:flex;flex-direction:column;padding:28px;border:1px solid var(--lineb);border-radius:10px;background:var(--panel)}
+    .now-card h3{margin-bottom:6px;font-family:var(--fs);font-weight:600;font-size:1.35rem;line-height:1.18;color:var(--ink)}
+    .now-card p,.now-card li{color:var(--body)}
+    .now-card ul{list-style:none;display:grid;gap:9px;margin:0 0 18px;padding-left:0}
+    .now-card li{position:relative;padding-left:20px}
+    .now-card li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;background:var(--acc);transform:rotate(45deg)}
+    .now-card .proof-line{margin-bottom:18px}
+    .now-card .case-link{margin-top:auto}
+    .now-card.dark{border-color:var(--linex);background:radial-gradient(90% 140% at 88% 0%,var(--glowsoft),transparent 60%),var(--panelhi)}
+    .now-card.dark .case-kicker{color:var(--acc)}
+    .now-card.dark p{color:var(--body)}
+    .now-card.dark a{color:var(--accs)}
+    .now-card.dark .proof-line span{border-color:var(--accd);background:transparent;color:var(--accs)}
+
+    .principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px}
+    .principle{padding:24px;border:1px solid var(--lineb);border-radius:10px;background:var(--panel)}
+    .principle .num{display:block;margin-bottom:12px;color:var(--acc);font-family:var(--fm);font-size:.72rem;font-weight:500;letter-spacing:.12em}
+    .principle h3{margin-bottom:8px;font-family:var(--fs);font-weight:600;font-size:1.12rem;color:var(--ink)}
+    .principle p{margin:0;color:var(--muted);font-size:.91rem}
+
+    .lookfor{padding:30px;border:1px solid var(--lineb);border-radius:var(--radius);background:var(--panel)}
+    .look-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 32px}
+    .field-label{margin-bottom:12px;color:var(--faint);font-family:var(--fm);font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip.plain{border-color:var(--line);color:var(--body)}
+    .criteria{display:grid;gap:12px;margin:24px 0 0;padding:22px 0 0;border-top:1px solid var(--lineb);list-style:none}
+    .criteria li{position:relative;padding-left:24px;color:var(--body)}
+    .criteria li::before{content:"";position:absolute;top:.6em;left:2px;width:8px;height:8px;background:var(--acc);transform:rotate(45deg)}
+    .criteria strong{color:var(--ink);font-weight:600}
+
+    .career-grid{display:grid}
+    .career-row{display:grid;grid-template-columns:190px 1fr auto;gap:18px;align-items:baseline;padding:15px 0;border-bottom:1px solid var(--line)}
+    .career-row:last-child{border-bottom:none}
+    .career-company{font-family:var(--fs);font-weight:600;color:var(--ink)}
+    .career-title{color:var(--muted)}
+    .career-dates{color:var(--acc);font-family:var(--fm);font-size:.8rem;white-space:nowrap}
+
+    .credentials{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .credential-card{padding:26px;border:1px solid var(--lineb);border-radius:var(--radius);background:var(--panel)}
+    .credential-card h3{margin-bottom:12px;font-family:var(--fs);font-weight:600;font-size:1.2rem;color:var(--ink)}
+    .credential-card p,.credential-card li{color:var(--muted);font-size:.91rem}
+    .credential-card ul{list-style:none;display:grid;gap:9px;margin:0;padding-left:0}
+    .credential-card li{position:relative;padding-left:20px}
+    .credential-card li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;background:var(--acc);transform:rotate(45deg)}
+    .credential-card a{color:var(--accs)}
+    .credential-card .more-link{margin:16px 0 0;font-weight:600}
+    .credential-card .more-link a{color:var(--acc);font-family:var(--fm);font-size:.85rem}
+
+    .org-intro{max-width:72ch;margin-bottom:26px;color:var(--muted)}
+    .families{display:grid;gap:13px}
+    .family{padding:24px;border:1px solid var(--lineb);border-radius:var(--radius);background:var(--panel)}
+    .family-head{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;margin-bottom:14px}
+    .family-no{display:inline-flex;justify-content:center;align-items:center;width:44px;height:30px;border-radius:8px;background:var(--panelhi);border:1px solid var(--accd);color:var(--acc);font-family:var(--fm);font-size:.78rem;font-weight:600}
+    .family h3{margin:0 0 3px;font-family:var(--fs);font-weight:600;font-size:1.14rem;line-height:1.25;color:var(--ink)}
+    .family-summary{margin:0;color:var(--muted);font-size:.88rem}
+    .docs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
+    .docs li{display:flex;flex-wrap:wrap;gap:5px 8px;align-items:baseline;padding:10px 12px;border-radius:8px;background:var(--panelhi);border:1px solid var(--line);color:var(--muted);font-family:var(--fm);font-size:.8rem}
+    .docs a{color:var(--accs);font-weight:600;font-variant-numeric:tabular-nums}
+    .status{color:var(--faint);font-family:var(--fm);font-size:.7rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+    .method{margin-top:18px;padding:22px;border:1px solid var(--lineb);border-radius:12px;background:var(--panel);color:var(--muted);font-size:.88rem}
+    .method strong{color:var(--ink)}
+
+    footer{padding:56px 0 60px;border-top:1px solid var(--line);background:radial-gradient(1px 1px at 12% 30%,rgba(255,255,255,.4),transparent),radial-gradient(1px 1px at 34% 66%,rgba(255,255,255,.26),transparent),radial-gradient(1.2px 1.2px at 64% 22%,rgba(255,255,255,.32),transparent),radial-gradient(1px 1px at 82% 56%,rgba(255,255,255,.22),transparent),radial-gradient(120% 90% at 82% 130%,var(--glowsoft),transparent 60%),var(--bg2)}
+    .foot-cta{max-width:52ch;margin-bottom:22px;font-family:var(--fs);font-weight:500;font-size:clamp(1.3rem,2.8vw,1.75rem);line-height:1.32;color:var(--ink)}
+    .foot-note{margin:20px 0 0;color:var(--faint);font-family:var(--fm);font-size:.78rem}
+    .footer-title{margin-bottom:14px;font-family:var(--fs);font-weight:600;font-size:1.35rem;color:var(--ink)}
+
+    @media (max-width:820px){
+      .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .split{grid-template-columns:1fr}
+      .cases,.now-grid,.principles,.credentials{grid-template-columns:1fr}
+      .case.featured,.case.wide{grid-column:auto}
+    }
+    @media (max-width:760px){.docs{grid-template-columns:1fr}}
+    @media (max-width:640px){
+      body{font-size:16px}
+      .wrap{padding-right:18px;padding-left:18px}
+      .nav-inner{align-items:center;padding:10px 16px;flex-wrap:wrap}
+      .nav-name{font-size:.92rem}
+      .nav-links{width:100%;gap:16px;overflow-x:auto;scrollbar-width:none}
+      .nav-links::-webkit-scrollbar{display:none}
+      .hero{padding-top:52px}
+      .metrics{gap:9px}
+      .metric{min-height:118px;padding:16px}
+      .metric-value{font-size:1.42rem}
+      .case,.now-card,.principle,.credential-card,.family{padding:20px}
+      .lookfor{padding:24px 20px}
+      .look-grid{grid-template-columns:1fr}
+      .career-row{grid-template-columns:1fr auto;gap:4px 12px}
+      .career-title{grid-column:1/-1}
+      .family-head{grid-template-columns:1fr;gap:8px}
+    }
+    @media print{
+      :root{--bg:#fff;--bg2:#fff;--panel:#fff;--panelhi:#fff;--ink:#111;--tx:#1a1a1a;--body:#333;--muted:#555;--faint:#777;--line:#dcdcdc;--lineb:#dcdcdc;--linex:#dcdcdc;--acc:#1e5fd8;--accs:#1a52c0;--accd:#cfcfcf;--glow:transparent;--glowsoft:transparent}
+      body{background:#fff;color:#1a1a1a;font-size:10.5pt;line-height:1.4}
+      .nav,.hero-actions{display:none}
+      .wrap{max-width:none;padding:0 12mm}
+      .hero,section,footer{padding:14pt 0;background:#fff}
+      .metric,.case,.now-card,.principle,.lookfor,.credential-card,.family{break-inside:avoid;background:#fff;border:1px solid #dcdcdc}
+      .metric-value{text-shadow:none}
+      .case.featured::before{display:none}
+      .now-card.dark{background:#fff}
+      footer{background:#fff}
+      .family-no,.docs li,.method{background:#fff}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-name" href="#top">Daniele Malleo, PhD</a>
+      <nav class="nav-links" aria-label="Section navigation">
+        <a href="#approach">How I work</a>
+        <a href="#work">Selected work</a>
+        <a href="#now">Now</a>
+        <a href="#fit">What I’m seeking</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="wrap hero">
+      <p class="kicker">Scientific systems builder · R&amp;D executive</p>
+      <h1>Daniele Malleo, PhD</h1>
+      <p class="headline">I build zero-to-one scientific platforms where software, automation, and AI meet the physical world.</p>
+      <p class="hero-intro">For more than 17 years, I’ve built complex scientific platforms from the ground up. My scope has grown from hands-on architecture to product launch, R&amp;D leadership, strategic partnerships, and fundraising—without losing the engineering discipline underneath.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#work">View selected work</a>
+        <a class="button" href="Daniele_Malleo_Resume_Jul2026.pdf" download>Download résumé</a>
+        <a class="button" href="mailto:malleo@pm.me">Start a conversation</a>
+      </div>
+      <p class="availability"><strong>Exploring:</strong> CTO, VP Engineering, Head of Engineering, and Head of R&amp;D opportunities · SF Bay Area, San Diego, or remote</p>
+      <div class="contact">
+        <a href="mailto:malleo@pm.me">malleo@pm.me</a>
+        <a href="https://www.linkedin.com/in/danielemalleo" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="plain">Cambridge, MA · Relocating West</span>
+        <span class="plain">U.S. / EU dual citizen</span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="metrics" aria-label="Selected career metrics">
+        <div class="metric">
+          <span class="metric-value">3 major platforms</span>
+          <span class="metric-label">Cell Shuttle, Cell Q, and Alinity hq advanced through launch</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">100+ people</span>
+          <span class="metric-label">Multidisciplinary R&amp;D organization built and led</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">$637M+</span>
+          <span class="metric-label">Financings supported alongside the CEO and CFO across Series B–D</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">18 invention families</span>
+          <span class="metric-label">Across automation, microfluidics, and single-cell systems</span>
+        </div>
+      </div>
+
+      <section id="approach">
+        <p class="eyebrow">How I work</p>
+        <h2>Build the system. Prove it. Build the company around it.</h2>
+        <div class="split">
+          <p class="positioning">I bring science, hardware, software, automation, and teams together into coherent platforms that work reliably in the real world.</p>
+          <div class="aside-card">
+            <h3>Systems engineer at heart. Executive in scope.</h3>
+            <p>Systems engineering is the discipline behind how I lead: define the problem and interfaces, surface assumptions, retire risk early, and validate with evidence. I apply the same approach to architecture, organizations, company strategy, and capital.</p>
+          </div>
+        </div>
+        <div class="principles">
+          <article class="principle">
+            <span class="num">01 · ARCHITECT</span>
+            <h3>Start from the whole system</h3>
+            <p>Define the system, interfaces, and highest-risk assumptions early so individual design choices reinforce the platform rather than constrain it.</p>
+          </article>
+          <article class="principle">
+            <span class="num">02 · BUILD</span>
+            <h3>Reduce ambiguity with prototypes</h3>
+            <p>Use prototypes, experiments, and direct user contact to retire the highest risks before scaling.</p>
+          </article>
+          <article class="principle">
+            <span class="num">03 · SCALE</span>
+            <h3>Grow product and company together</h3>
+            <p>Build the team and operating model around the product, while creating the partnerships, IP, and financing story needed to scale.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work">
+        <p class="eyebrow">Selected work</p>
+        <h2>Platforms built, launched, and scaled.</h2>
+        <div class="cases">
+          <article class="case featured">
+            <p class="case-kicker">Zero to scale · Cellares</p>
+            <h3>Building Cellares from first architecture to commercial scale</h3>
+            <p class="case-role">Senior Vice President, R&amp;D · Joined immediately after Series A</p>
+            <ul>
+              <li>Joined with fewer than 10 employees, personally defined the Cell Shuttle architecture, and drove successive prototype iterations.</li>
+              <li>Took Cell Shuttle and Cell Q from early prototypes through customer-backed programs and commercial launch. The platforms integrated robotics, software, data, fluidics, analytics, and GMP-ready controls.</li>
+              <li>Built and led a multidisciplinary R&amp;D organization of more than 100 people as Cellares grew to roughly 200 employees.</li>
+              <li>Played a primary technical role alongside the CEO and CFO in the $82M Series B and $255M Series C. I also contributed to work that supported the $300M+ Series D announced after my departure.</li>
+              <li>Initiated and led multi-year technology partnerships with Sony Biotechnology for advanced imaging and cell sorting and with 908 Devices for at-line analytics.</li>
+              <li>Led the technical presentations, demonstrations, and diligence supporting a Bristol Myers Squibb development and supply agreement valued at up to $380M.</li>
+            </ul>
+            <div class="proof-line">
+              <span>Founding-stage architecture</span>
+              <span>Prototype to launch</span>
+              <span>100+ person R&amp;D</span>
+              <span>Fundraising</span>
+              <span>Technical partnerships</span>
+              <span>10+ patents</span>
+            </div>
+            <div class="case-links">
+              <a class="case-link" href="https://www.cellares.com/technology/#high-throughput" target="_blank" rel="noopener">Visit the Cell Shuttle platform →</a>
+              <a class="case-link" href="https://www.cellares.com/technology/#cell-q" target="_blank" rel="noopener">Visit the Cell Q platform →</a>
+            </div>
+          </article>
+
+          <article class="case">
+            <p class="case-kicker">Company inception · Berkeley Lights</p>
+            <h3>Architecting the system that became the Beacon platform</h3>
+            <p class="case-role">Technology Lead / Systems Architect</p>
+            <ul>
+              <li>Joined at inception and led systems architecture for the instrument that became the Beacon platform.</li>
+              <li>Integrated optoelectronics, microfluidics, imaging, motion control, semiconductor consumables, sensors, and closed-loop software into a commercial system for massively parallel single-cell analysis.</li>
+            </ul>
+            <div class="proof-line">
+              <span>Founding engineering team</span>
+              <span>10+ patents</span>
+            </div>
+            <a class="case-link" href="https://brukercellularanalysis.com/products/instruments/the-beacon-optofluidic-system/" target="_blank" rel="noopener">View the Beacon platform →</a>
+          </article>
+
+          <article class="case">
+            <p class="case-kicker">Regulated platform launch · Abbott Diagnostics</p>
+            <h3>Architecting Alinity hq through clinical launch</h3>
+            <p class="case-role">Chief Architect → Senior R&amp;D Manager</p>
+            <ul>
+              <li>Owned requirements, systems architecture, technical-risk retirement, integration, verification, and validation for Abbott’s flagship clinical hematology analyzer.</li>
+              <li>Coordinated decisions across hardware, software, quality, clinical, manufacturing, marketing, and service to bring Alinity hq through commercial launch in two years.</li>
+              <li>Built and led post-launch sustaining and reliability programs, resolving line-down, ship-hold, CAPA, and recall events through systematic root-cause analysis and generating more than $10M in savings.</li>
+            </ul>
+            <div class="proof-line">
+              <span>Clinical diagnostics</span>
+              <span>Regulated development</span>
+              <span>Systems architecture</span>
+              <span>Reliability engineering</span>
+            </div>
+            <a class="case-link" href="https://www.corelaboratory.abbott/us/en/offerings/brands/alinity/Alinity-h-hematology-system.html" target="_blank" rel="noopener">Visit the Alinity hq platform →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="now">
+        <p class="eyebrow">What I’m building now</p>
+        <h2>AI and autonomous systems in practice.</h2>
+        <div class="now-grid">
+          <article class="now-card">
+            <p class="case-kicker">Professional work · Lila Sciences</p>
+            <h3>Architecting the AI Science Factory as a learning system</h3>
+            <p class="case-role">Vice President, AI Science Factory Product</p>
+            <p>I own product strategy and architecture for Lila’s AI Science Factory—the integrated, instrumented, robotically orchestrated physical platform where AI systems design and execute experiments across life and materials science.</p>
+            <ul>
+              <li>Define the Factory as a learning system, closing the loop from AI-generated hypotheses through automated execution and verification so experimental results improve models and decision policies.</li>
+              <li>Set cross-domain capability roadmaps and deployment sequencing across instrumentation, robotics, data, software, and AI/ML, aligning customer needs with internal scientific and technical priorities.</li>
+              <li>Formulated the global expansion strategy for multiple AI Science Factories, including repeatable site architecture, capability phasing, operating assumptions, and regional deployment priorities.</li>
+              <li>Developed the productization and IP strategy, defining product boundaries, build-versus-partner choices, protectable differentiation, and models for deploying platform capabilities with external customers and partners.</li>
+              <li>Lead customer and partner discovery and represent Lila in technical and strategic discussions with pharmaceutical, industrial, government, and research stakeholders.</li>
+            </ul>
+            <div class="proof-line">
+              <span>AI Science Factory architecture</span>
+              <span>Closed-loop experimentation</span>
+              <span>Global deployment strategy</span>
+              <span>Productization &amp; IP</span>
+              <span>External partnerships</span>
+            </div>
+            <a class="case-link" href="https://www.lila.ai/" target="_blank" rel="noopener">Visit Lila Sciences →</a>
+          </article>
+          <article class="now-card dark">
+            <p class="case-kicker">Independent build · dailybrief.fyi</p>
+            <h3>Agentic systems in practice</h3>
+            <p>I built and operate <a href="https://www.dailybrief.fyi" target="_blank" rel="noopener">dailybrief.fyi</a>, an agentic research framework that monitors news and economic data, conducts primary-source research, and publishes a daily briefing.</p>
+            <p>Operating it means solving practical problems in orchestration, source quality, verification, failure recovery, and turning machine-generated research into something people can trust.</p>
+            <div class="proof-line">
+              <span>Agentic orchestration</span>
+              <span>Primary-source research</span>
+              <span>Trust and verification</span>
+            </div>
+            <a class="case-link" href="https://www.dailybrief.fyi" target="_blank" rel="noopener">Visit dailybrief.fyi →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="fit">
+        <p class="eyebrow">What I’m seeking</p>
+        <h2>A role where I can build the system and the team.</h2>
+        <div class="lookfor">
+          <div class="look-grid">
+            <div>
+              <p class="field-label">Role shapes</p>
+              <div class="chips">
+                <span class="chip">CTO / founding technical executive</span>
+                <span class="chip">VP Engineering</span>
+                <span class="chip">Head of Engineering</span>
+                <span class="chip">Head of R&amp;D</span>
+                <span class="chip">Head of Platform</span>
+                <span class="chip">Frontier-lab technical leadership</span>
+              </div>
+            </div>
+            <div>
+              <p class="field-label">Best environments</p>
+              <div class="chips">
+                <span class="chip plain">Pre-product to Series A</span>
+                <span class="chip plain">High technical ownership</span>
+                <span class="chip plain">Founding team / cofounder opportunity</span>
+                <span class="chip plain">Exceptional frontier labs</span>
+              </div>
+            </div>
+            <div>
+              <p class="field-label">Mission areas</p>
+              <div class="chips">
+                <span class="chip plain">Health &amp; medicine</span>
+                <span class="chip plain">Scientific discovery</span>
+                <span class="chip plain">Energy</span>
+                <span class="chip plain">Environment</span>
+              </div>
+            </div>
+            <div>
+              <p class="field-label">Location</p>
+              <div class="chips">
+                <span class="chip plain">SF Bay Area</span>
+                <span class="chip plain">San Diego</span>
+                <span class="chip plain">Fully remote</span>
+              </div>
+            </div>
+          </div>
+          <ul class="criteria">
+            <li><strong>Build and lead.</strong> I want to stay close to architecture and system design while owning the team, roadmap, and outcome.</li>
+            <li><strong>Start early.</strong> I do my best work when the core technical decisions are still open, the product is taking shape, and the team is being built around it.</li>
+            <li><strong>Solve consequential problems.</strong> I’m drawn to health, science, energy, and environmental challenges where AI and software must produce trustworthy real-world results.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="career">
+        <p class="eyebrow">Career snapshot</p>
+        <h2>Seventeen years building scientific platforms.</h2>
+        <div class="career-grid">
+          <div class="career-row">
+            <span class="career-company">Lila Sciences</span>
+            <span class="career-title">Vice President, Product · AI Science Factories</span>
+            <span class="career-dates">2025–present</span>
+          </div>
+          <div class="career-row">
+            <span class="career-company">Cellares</span>
+            <span class="career-title">Senior Vice President, Research &amp; Development</span>
+            <span class="career-dates">2020–2025</span>
+          </div>
+          <div class="career-row">
+            <span class="career-company">BD Biosciences</span>
+            <span class="career-title">Senior Manager, Systems Engineering</span>
+            <span class="career-dates">2019–2020</span>
+          </div>
+          <div class="career-row">
+            <span class="career-company">Abbott Diagnostics</span>
+            <span class="career-title">Senior R&amp;D Manager / Chief Architect · Alinity hq launch</span>
+            <span class="career-dates">2015–2019</span>
+          </div>
+          <div class="career-row">
+            <span class="career-company">Berkeley Lights</span>
+            <span class="career-title">Technology Lead / Systems Architect · Founding engineering team</span>
+            <span class="career-dates">2012–2015</span>
+          </div>
+          <div class="career-row">
+            <span class="career-company">Fluxion Biosciences</span>
+            <span class="career-title">Senior Systems Engineer</span>
+            <span class="career-dates">2011–2012</span>
+          </div>
+          <div class="career-row">
+            <span class="career-company">Oxford Gene Technology</span>
+            <span class="career-title">Senior Research Engineer</span>
+            <span class="career-dates">2008–2011</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="credentials">
+        <p class="eyebrow">Technical foundations</p>
+        <h2>Invention and education.</h2>
+        <div class="credentials">
+          <article class="credential-card">
+            <h3>Selected intellectual property</h3>
+            <p>Named inventor across 18 distinct invention families, including roughly 12 granted U.S. patents and 16 published U.S. applications.</p>
+            <ul>
+              <li><a href="https://patents.google.com/patent/US12350667B2/en" target="_blank" rel="noopener">Systems and Methods for Cell Processing</a></li>
+              <li><a href="https://patents.google.com/patent/US10384204B2/en" target="_blank" rel="noopener">Systems for Operating Electrokinetic Devices</a></li>
+              <li><a href="https://patents.google.com/patent/US10010882B2/en" target="_blank" rel="noopener">Microfluidic Devices Having Isolation Pens</a></li>
+            </ul>
+            <p class="more-link"><a href="patents.html">View the complete patent and invention-family list →</a></p>
+          </article>
+          <article class="credential-card">
+            <h3>Education and executive development</h3>
+            <ul>
+              <li>Wharton — Chief Technology Officer Executive Program</li>
+              <li>University of Southampton — PhD, Electronic Engineering</li>
+              <li>UC Berkeley — Graduate Visiting Scholar, Bioengineering</li>
+              <li>University of Southampton — MSc, Microelectronics, with Distinction</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Interested in working together?</p>
+      <p class="foot-cta">I’m looking for a West Coast or remote role where I can help build the product, technical organization, and company from the ground up.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:malleo@pm.me">Email Daniele</a>
+        <a class="button" href="Daniele_Malleo_Resume_Jul2026.pdf" download>Download résumé</a>
+        <a class="button" href="https://www.linkedin.com/in/danielemalleo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="foot-note">Daniele Malleo, PhD · Cambridge, MA · Relocating to the West Coast · U.S. / EU dual citizen · <a href="https://www.theskyabove.net" target="_blank" rel="noopener">Astrophotography</a></p>
+    </div>
+  </footer>
+</body>
+</html>
